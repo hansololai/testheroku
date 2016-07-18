@@ -11,7 +11,9 @@ def index(request):
 
 def bond(request):
 
-	R2list=[{'name':'CHE','value':0.9},{'name':'AUG','value':0.8}];
+	R2list=[{'name':'CHE','value':0.9},
+	{'name':'AUG','value':0.8},
+	{'name':'CHN','value':0.8}];
 	return render(request, 'bond.html',{'rlist':R2list});
 
 def db(request):

@@ -9,6 +9,11 @@ def index(request):
     return render(request, 'index.html')
 
 
+def bond(request):
+
+	R2list=[{'name':'CHE','value':0.9},{'name':'AUG','value':0.8}];
+	return render(request, 'bond.html',{'rlist':R2list});
+
 def db(request):
 
     greeting = Greeting()
